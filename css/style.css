@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* Primary */
+  --SoftOrarge: hsl(35, 77%, 62%);
+  --SoftRed: hsl(5, 85%, 63%);
+
+  /* Neutral */
+  --offWhite: hsl(36, 100%, 99%);
+  --grayishBlue: hsl(233, 8%, 79%);
+  --darkGrayishBlue: hsl(236, 13%, 42%);
+  --veryDarkBlue: hsl(240, 100%, 5%);
+
+  /* Font Weight */
+  --fontWght400: 400;
+  --fontWght700: 700;
+  --fontWght800: 800;
+}
+
+/* Common CSS */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: var(--fontWght400);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fontWght800);
+}
+
+.container {
+  width: 80%;
+}
+
+/* Header Area */
+#header_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+#header_area .logo_area {
+  width: 6%;
+}
+
+#header_area .nav_area {
+  width: 45%;
+}
+#header_area .nav_area ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header_area .nav_area ul li {
+  margin-left: 2rem;
+}
+#header_area .nav_area ul li a {
+  display: inline-block;
+  color: var(--darkGrayishBlue);
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+#header_area .nav_area ul li a:hover {
+  color: var(--SoftRed);
+}
+
+#header_area .menuOpen {
+  display: none;
+}
+#header_area .nav_area .menuClose {
+  display: none;
+}
+/* Hero Area */
+#hero_area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+#hero_area .main_hero {
+  width: 62%;
+}
+
+#hero_area .hero_img {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+#hero_area .hero_img .SecendImg {
+  display: none;
+}
+#hero_area .hero_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero_area .hero_info .title {
+  width: 48%;
+}
+
+#hero_area .hero_info .title h1 {
+  font-size: 58px;
+  color: var(--veryDarkBlue);
+}
+
+#hero_area .hero_info .info {
+  width: 48%;
+  height: 100%;
+}
+
+#hero_area .hero_info .info p {
+  color: var(--darkGrayishBlue);
+  font-size: 17px;
+  margin-bottom: 4rem;
+  margin-top: 10px;
+}
+
+#hero_area .hero_info .info a {
+  display: inline-block;
+  background: var(--SoftRed);
+  color: var(--veryDarkBlue);
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  letter-spacing: 0.2rem;
+  font-size: 16px;
+  font-weight: var(--fontWght700);
+  transition: 0.4s;
+}
+
+#hero_area .hero_info .info a:hover {
+  background: var(--veryDarkBlue);
+  color: var(--offWhite);
+}
+
+#hero_area .side_hero {
+  width: 33%;
+  background: var(--veryDarkBlue);
+  padding: 25px 40px 0px 30px;
+  border-bottom: 1px solid var(--darkGrayishBlue);
+}
+
+#hero_area .side_hero h2 {
+  color: var(--SoftOrarge);
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+#hero_area .side_hero .child_sideHero {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--darkGrayishBlue);
+}
+#hero_area .side_hero .child_sideHero:last-child {
+  margin-bottom: 0px;
+  border-bottom: 0px solid var(--darkGrayishBlue);
+}
+
+#hero_area .side_hero .child_sideHero h3 {
+  color: var(--offWhite);
+  font-size: 23px;
+}
+
+#hero_area .side_hero .child_sideHero p {
+  color: var(--grayishBlue);
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+/* Prodect Area */
+#prodect_area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.child_prodect {
+  display: flex;
+  width: 30%;
+}
+
+.pro_img {
+  margin-right: 25px;
+}
+
+.pro_img img {
+  width: 102px;
+  height: 136px;
+  display: block;
+}
+
+.pro_info h2 {
+  font-size: 28px;
+  color: var(--SoftRed);
+  margin-bottom: 10px;
+}
+
+.pro_info h4 {
+  color: var(--veryDarkBlue);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.pro_info h4 a {
+  color: var(--veryDarkBlue);
+  transition: 0.4s;
+}
+
+.pro_info h4 a:hover {
+  color: var(--SoftRed);
+}
+
+.pro_info p {
+  color: var(--darkGrayishBlue);
+  line-height: 29px;
+  font-size: 17px;
+}
